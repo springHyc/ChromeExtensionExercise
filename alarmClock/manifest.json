@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "AlarmClock",
+  "description": "提醒-下班",
+  "version": "1.0",
+
+  "permissions": ["https://secure.flickr.com/", "tabs"],
+  "content_scripts": [{ "js": ["index.html"], "matches": ["http://*/"] }],
+  "chrome-extension-resource": "unsafe-inline",
+  "browser_action": {
+    "default_icon": "clock.png",
+    "default_popup": "index.html"
+  }
+}
